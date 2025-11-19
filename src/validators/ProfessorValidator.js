@@ -1,4 +1,3 @@
-// src/validators/ProfessorValidator.js
 const yup = require("yup");
 
 const store = yup.object({

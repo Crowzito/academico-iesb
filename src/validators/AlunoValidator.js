@@ -1,4 +1,3 @@
-// src/validators/AlunoValidator.js
 const yup = require("yup");
 
 const enderecoSchema = yup

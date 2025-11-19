@@ -1,4 +1,3 @@
-// src/models/AlunoModel.js
 const { Schema, model } = require("mongoose");
 
 const EnderecoSchema = new Schema(
