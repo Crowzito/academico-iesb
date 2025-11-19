@@ -1,4 +1,3 @@
-// src/controllers/AlunoController.js
 const Aluno = require("../models/AlunoModel");
 
 module.exports = {

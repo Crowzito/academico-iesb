@@ -1,4 +1,3 @@
-// src/models/ProfessorModel.js
 const { Schema, model } = require("mongoose");
 
 const ProfessorSchema = new Schema(
