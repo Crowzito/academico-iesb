@@ -275,7 +275,4 @@ Abaixo estão todos os endpoints disponíveis para as funcionalidades do sistema
   * `PUT /usuarios/:id` – Atualiza um usuário
   * `DELETE /usuarios/:id` – Remove um usuário
 
-<!-- end list -->
-
-```
 ```
