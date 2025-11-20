@@ -1,4 +1,3 @@
-// src/models/DepartamentoModel.js
 const { Schema, model } = require('mongoose');
 
 const DepartamentoSchema = new Schema({

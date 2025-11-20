@@ -1,4 +1,3 @@
-// src/controllers/CursoController.js
 const Curso = require("../models/CursoModel");
 
 module.exports = {
