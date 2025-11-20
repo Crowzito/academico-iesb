@@ -1,12 +1,4 @@
-Este é um excelente modelo de `README.md`. Vou integrar o diagrama de entidade-relacionamento (DER) em código **Mermaid.js** para representar as 10 entidades do seu **Sistema Acadêmico Universitário**, seguindo a estrutura lógica e de relacionamentos esperada.
-
-O código será inserido na seção **Modelagem de Dados** do seu README.
-
------
-
 ## 📐 Diagrama de Entidade-Relacionamento (Mermaid)
-
-O diagrama abaixo ilustra as 10 coleções, seus campos chave e os relacionamentos principais (1:N, 1:1) que regem a lógica do sistema acadêmico.
 
 ```mermaid
 erDiagram
@@ -98,10 +90,6 @@ erDiagram
 ```
 
 -----
-
-## 📄 README.md Completo
-
-Aqui está o conteúdo do seu `README.md` com a nova seção **Modelagem de Dados** preenchida.
 
 
 # Trabalho A2 de Construção de Backend – Sistema Acadêmico Universitário
@@ -274,5 +262,3 @@ Abaixo estão todos os endpoints disponíveis para as funcionalidades do sistema
   * `POST /usuarios` – Cria um usuário (Exemplo de Body: `{"username": "admin", "senha": "..."}`)
   * `PUT /usuarios/:id` – Atualiza um usuário
   * `DELETE /usuarios/:id` – Remove um usuário
-
-```
