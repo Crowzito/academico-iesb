@@ -1,4 +1,3 @@
-// src/validators/TurmaValidator.js
 const yup = require("yup");
 
 const store = yup.object({

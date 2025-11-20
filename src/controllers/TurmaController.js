@@ -1,4 +1,3 @@
-// src/controllers/TurmaController.js
 const Turma = require("../models/TurmaModel");
 
 module.exports = {

@@ -1,4 +1,3 @@
-// src/controllers/DisciplinaController.js
 const Disciplina = require("../models/DisciplinaModel");
 
 module.exports = {

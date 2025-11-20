@@ -1,4 +1,3 @@
-// src/models/DisciplinaModel.js
 const { Schema, model } = require('mongoose');
 
 const DisciplinaSchema = new Schema({
