@@ -1,4 +1,3 @@
-// src/models/TurmaModel.js
 const { Schema, model } = require("mongoose");
 
 const TurmaSchema = new Schema(

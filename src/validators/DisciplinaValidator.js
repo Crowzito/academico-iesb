@@ -1,4 +1,3 @@
-// src/validators/DisciplinaValidator.js
 const yup = require("yup");
 
 const store = yup.object({
