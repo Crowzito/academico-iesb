@@ -1,4 +1,3 @@
-// src/validators/MatriculaValidator.js
 const yup = require('yup');
 
 const store = yup.object({

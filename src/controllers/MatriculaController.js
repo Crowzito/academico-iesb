@@ -1,4 +1,3 @@
-// src/controllers/MatriculaController.js
 const Matricula = require("../models/MatriculaModel");
 
 module.exports = {

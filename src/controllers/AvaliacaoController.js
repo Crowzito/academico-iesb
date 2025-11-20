@@ -1,4 +1,3 @@
-// src/controllers/AvaliacaoController.js
 const Avaliacao = require("../models/AvaliacaoModel");
 
 module.exports = {

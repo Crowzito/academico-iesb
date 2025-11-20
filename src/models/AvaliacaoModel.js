@@ -1,4 +1,3 @@
-// src/models/AvaliacaoModel.js
 const { Schema, model } = require("mongoose");
 
 const AvaliacaoSchema = new Schema(

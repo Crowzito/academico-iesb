@@ -1,4 +1,3 @@
-// src/validators/AvaliacaoValidator.js
 const yup = require('yup');
 
 const store = yup.object({
