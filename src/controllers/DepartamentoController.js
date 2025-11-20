@@ -1,4 +1,3 @@
-// src/controllers/DepartamentoController.js
 const Departamento = require("../models/DepartamentoModel");
 
 module.exports = {
