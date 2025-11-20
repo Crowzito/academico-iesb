@@ -103,7 +103,7 @@ erDiagram
 
 Aqui está o conteúdo do seu `README.md` com a nova seção **Modelagem de Dados** preenchida.
 
-````markdown
+
 # Trabalho A2 de Construção de Backend – Sistema Acadêmico Universitário
 
 ## 📖 Descrição
