@@ -1,4 +1,3 @@
-// src/models/MatriculaModel.js
 const { Schema, model } = require("mongoose");
 
 const MatriculaSchema = new Schema(
