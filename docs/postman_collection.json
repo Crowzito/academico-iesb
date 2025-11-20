@@ -1,0 +1,438 @@
+{
+    "info": {
+        "_postman_id": "aa22cc76-11c0-4d4b-afb8-b800658c65bd",
+        "name": "api-academico",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Alunos",
+            "item": [
+                {
+                    "name": "GET - Listar Alunos",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/alunos"
+                    }
+                },
+                {
+                    "name": "GET - Buscar Aluno por ID",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{base_url}}/alunos/{{idAluno}}"
+                    }
+                },
+                {
+                    "name": "POST - Criar Aluno",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/alunos",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"João Silva\",\n  \"email\": \"joao@email.com\",\n  \"cpf\": \"12345678900\",\n  \"curso\": \"{{idCurso}}\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Aluno",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/alunos/{{idAluno}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"João Atualizado\",\n  \"email\": \"joaoupdate@email.com\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Aluno",
+                    "request": {
+                        "method": "DELETE",
+                        "url": "{{base_url}}/alunos/{{idAluno}}"
+                    }
+                }
+            ]
+        },
+
+        {
+            "name": "Professores",
+            "item": [
+                {
+                    "name": "GET - Listar Professores",
+                    "request": { "method": "GET", "url": "{{base_url}}/professores" }
+                },
+                {
+                    "name": "GET - Buscar Professor por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/professores/{{idProfessor}}" }
+                },
+                {
+                    "name": "POST - Criar Professor",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/professores",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Ana Maria\",\n  \"email\": \"ana@uni.com\",\n  \"departamento\": \"{{idDepartamento}}\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Professor",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/professores/{{idProfessor}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Ana Atualizada\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Professor",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/professores/{{idProfessor}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Cursos",
+            "item": [
+                {
+                    "name": "GET - Listar Cursos",
+                    "request": { "method": "GET", "url": "{{base_url}}/cursos" }
+                },
+                {
+                    "name": "GET - Buscar Curso por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/cursos/{{idCurso}}" }
+                },
+                {
+                    "name": "POST - Criar Curso",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/cursos",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Engenharia de Software\",\n  \"departamento\": \"{{idDepartamento}}\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Curso",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/cursos/{{idCurso}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Engenharia Atualizada\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Curso",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/cursos/{{idCurso}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Departamentos",
+            "item": [
+                {
+                    "name": "GET - Listar Departamentos",
+                    "request": { "method": "GET", "url": "{{base_url}}/departamentos" }
+                },
+                {
+                    "name": "GET - Buscar Departamento por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/departamentos/{{idDepartamento}}" }
+                },
+                {
+                    "name": "POST - Criar Departamento",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/departamentos",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Departamento de TI\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Departamento",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/departamentos/{{idDepartamento}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Departamento Atualizado\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Departamento",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/departamentos/{{idDepartamento}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Disciplinas",
+            "item": [
+                {
+                    "name": "GET - Listar Disciplinas",
+                    "request": { "method": "GET", "url": "{{base_url}}/disciplinas" }
+                },
+                {
+                    "name": "GET - Buscar Disciplina por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/disciplinas/{{idDisciplina}}" }
+                },
+                {
+                    "name": "POST - Criar Disciplina",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/disciplinas",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Banco de Dados\",\n  \"curso\": \"{{idCurso}}\"\n}",
+                            "options": { "raw": { "language": "json" } }
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Disciplina",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/disciplinas/{{idDisciplina}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"BD II\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Disciplina",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/disciplinas/{{idDisciplina}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Turmas",
+            "item": [
+                {
+                    "name": "GET - Listar Turmas",
+                    "request": { "method": "GET", "url": "{{base_url}}/turmas" }
+                },
+                {
+                    "name": "GET - Buscar Turma por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/turmas/{{idTurma}}" }
+                },
+                {
+                    "name": "POST - Criar Turma",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/turmas",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Turma 01\",\n  \"disciplina\": \"{{idDisciplina}}\",\n  \"professor\": \"{{idProfessor}}\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Turma",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/turmas/{{idTurma}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Turma Atualizada\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Turma",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/turmas/{{idTurma}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Matrículas",
+            "item": [
+                {
+                    "name": "GET - Listar Matrículas",
+                    "request": { "method": "GET", "url": "{{base_url}}/matriculas" }
+                },
+                {
+                    "name": "GET - Buscar Matrícula por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/matriculas/{{idMatricula}}" }
+                },
+                {
+                    "name": "POST - Criar Matrícula",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/matriculas",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"aluno\": \"{{idAluno}}\",\n  \"turma\": \"{{idTurma}}\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Matrícula",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/matriculas/{{idMatricula}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"aluno\": \"{{idAluno}}\",\n  \"turma\": \"{{idTurma}}\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Matrícula",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/matriculas/{{idMatricula}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Avaliações",
+            "item": [
+                {
+                    "name": "GET - Listar Avaliações",
+                    "request": { "method": "GET", "url": "{{base_url}}/avaliacoes" }
+                },
+                {
+                    "name": "GET - Buscar Avaliação por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/avaliacoes/{{idAvaliacao}}" }
+                },
+                {
+                    "name": "POST - Criar Avaliação",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/avaliacoes",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"turma\": \"{{idTurma}}\",\n  \"titulo\": \"Prova 1\",\n  \"peso\": 2\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Avaliação",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/avaliacoes/{{idAvaliacao}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"titulo\": \"Prova Final\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Avaliação",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/avaliacoes/{{idAvaliacao}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Notas",
+            "item": [
+                {
+                    "name": "GET - Listar Notas",
+                    "request": { "method": "GET", "url": "{{base_url}}/notas" }
+                },
+                {
+                    "name": "GET - Buscar Nota por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/notas/{{idNota}}" }
+                },
+                {
+                    "name": "POST - Criar Nota",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/notas",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"avaliacao\": \"{{idAvaliacao}}\",\n  \"aluno\": \"{{idAluno}}\",\n  \"nota\": 8.5\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Nota",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/notas/{{idNota}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nota\": 9.0\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Nota",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/notas/{{idNota}}" }
+                }
+            ]
+        },
+
+        {
+            "name": "Usuários",
+            "item": [
+                {
+                    "name": "GET - Listar Usuários",
+                    "request": { "method": "GET", "url": "{{base_url}}/usuarios" }
+                },
+                {
+                    "name": "GET - Buscar Usuário por ID",
+                    "request": { "method": "GET", "url": "{{base_url}}/usuarios/{{idUsuario}}" }
+                },
+                {
+                    "name": "POST - Criar Usuário",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{base_url}}/usuarios",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Admin\",\n  \"email\": \"admin@uni.com\",\n  \"senha\": \"123456\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "PUT - Atualizar Usuário",
+                    "request": {
+                        "method": "PUT",
+                        "url": "{{base_url}}/usuarios/{{idUsuario}}",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"nome\": \"Admin Atualizado\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "DELETE - Remover Usuário",
+                    "request": { "method": "DELETE", "url": "{{base_url}}/usuarios/{{idUsuario}}" }
+                }
+            ]
+        }
+    ],
+    "variable": [
+        { "key": "base_url", "value": "http://localhost:3000/api" },
+        { "key": "idAluno", "value": "" },
+        { "key": "idProfessor", "value": "" },
+        { "key": "idCurso", "value": "" },
+        { "key": "idDepartamento", "value": "" },
+        { "key": "idDisciplina", "value": "" },
+        { "key": "idTurma", "value": "" },
+        { "key": "idMatricula", "value": "" },
+        { "key": "idAvaliacao", "value": "" },
+        { "key": "idNota", "value": "" },
+        { "key": "idUsuario", "value": "" }
+    ]
+}
